@@ -12066,6 +12066,19 @@ fieldset:disabled .btn {
   text-align: left;
 }
 
+.home-banner {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+@media (min-width: 992px) {
+  .home-banner {
+    background-image: none;
+  }
+}
+
 .role::before {
   content: "";
   position: absolute;
