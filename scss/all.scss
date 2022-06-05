@@ -1,0 +1,202 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/variables";
+
+.navbar{
+  @include media-breakpoint-up(lg){
+    position: fixed;
+    z-index: 3;
+  }
+}
+.nav-border{
+  border-bottom: 2px solid #FFD153;
+  @include media-breakpoint-up(lg){
+    border-bottom: 0px;
+  }
+}
+.section-mb{
+  margin-bottom: 60px;
+  @include media-breakpoint-up(lg){
+    margin-bottom: 100px;
+  }
+}
+.index-banner{
+  padding: 25% 0;
+}
+.student-photo{
+  top: -25%;
+}
+.review-detail{
+  border-top: 1px solid #DDDDDD;
+}
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #DDDDDD;
+  margin: 0 4px;
+}
+.active-dot{
+  width: 16px;
+  background-color: #FFD153;
+  border-radius: 50px;
+}
+.footer-photo{
+  padding-bottom: 40%;
+  .footer-content{
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+  }
+}
+.scroll-top{
+  width: 71px;
+  height: 71px;
+  right: 5%;
+  top: 80%;
+  z-index: 3;
+  line-height: 60px;
+}
+
+.index-banner{
+  &::before{
+    content: "";
+    position: absolute;
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg);
+    background-size: contain;
+    left: -20%;
+    top: 110%;
+    z-index: -1;
+    @include media-breakpoint-up(lg){
+      width: 360px;
+      height: 360px;
+      left: -20%;
+      top: 75%;
+    }
+  }
+  @include media-breakpoint-up(lg){
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg);
+    background-position: right top;
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding: 5% 0;
+  }
+  .brand-title{
+    text-align: left;
+  }
+}
+.role{
+  &::before{
+    content: "";
+    position: absolute;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
+    background-size: contain;
+    top: 95%;
+    right: 0;
+    @include media-breakpoint-up(lg){
+      width: 310px;
+      height: 310px;
+      top: 75%;
+    }
+  }
+}
+.review{
+  &::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+    background-size: contain;
+    top: 10%;
+    left: -20%;
+    @include media-breakpoint-up(lg){
+     left: 0;
+     top: 5%;
+    }
+  }
+}
+.package-title{
+  height: 65vh;
+  @include media-breakpoint-up(lg){
+    height: 70vh;
+  }
+}
+.package-banner{
+  position: relative;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  &::before{
+    content: "";
+    position: absolute;
+    background-color: $light;
+    border-radius: 0 0 0 25%;
+    width: 100%;
+    height: 65vh;
+    z-index: -1;
+  }
+  @include media-breakpoint-up(lg){
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg);
+    background-position: right top;
+  }
+}
+.payment-title{
+  @include media-breakpoint-up(lg){
+    transform: translateY(130%);
+  }
+}
+.suitable-package{
+  &::before{
+    content: "";
+    position: absolute;
+    width: 204px;
+    height: 204px;
+    border-radius: 50%;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+    background-size: contain;
+    top: 45%;
+    left: -20%;
+    z-index: -1;
+    @include media-breakpoint-up(lg){
+      width: 361px;
+      height: 361px;
+     left: -20%;
+     top: 30%;
+    }
+  }
+  .num{
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+}
+.card-package{
+  h3{
+    border-bottom: 1px solid #F5F5F5;
+  }
+  .card-label{
+    width: 45%;
+  }
+  .equal{
+    width: 10%;
+  }
+}
+.answer{
+  display: none;
+}
+.show-ans{
+  display: block;
+  padding-bottom: 24px;
+  font-size: 1.25rem;
+}
+@media (max-width: 991.98px) {
+  .brand-title{
+    text-align: center;
+  }
+}
